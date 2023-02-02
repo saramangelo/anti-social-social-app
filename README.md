@@ -1,3 +1,40 @@
+# anti-social-social-app 
+![Github license](https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen)
+
+## Description 
+
+
+## Screenshot
+![]()
+  
+## Table of Contents
+    
+- [anti-social-social-app](#anti-social-social-app)
+  - [Description](#description)
+  - [Screenshot](#screenshot)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
+  - [How to Contribute](#how-to-contribute)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+## Installation
+
+  
+  
+## Usage
+
+   
+  
+## Credits
+
+  
+  
+## License
 MIT License
 
 Copyright (c) 2023 Sara Angelo
@@ -19,3 +56,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+## Features
+
+
+
+## How to Contribute
+  
+(https://www.contributor-covenant.org/)
+  
+
+## Tests
+
+
+
+## Questions
+Reach me at the links below with additional questions:
+- Github: https://github.com/saramangelo
+- Email: saramangelo@gmail.com
