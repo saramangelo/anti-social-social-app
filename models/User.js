@@ -1,6 +1,12 @@
 const { Schema, model } = require('mongoose');
 const userSchema = require('./User');
 
+// Aggregate function to get the number of students overall
+const headCount = async () =>
+  Student.aggregate()
+    .count('studentCount')
+    .then((numberOfStudents) => numberOfStudents);
+
 // Schema to create User model
 const userSchema = new Schema(
   {
