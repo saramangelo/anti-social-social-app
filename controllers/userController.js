@@ -48,3 +48,9 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
 };
+
+
+// update user by adding friend from param (getting id from param from both user and friend) to the friends array
+// addFriend 
+// findOneAndUpdate - $set 
+// see #26 Tag
