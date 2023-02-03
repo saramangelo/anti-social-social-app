@@ -4,14 +4,14 @@
 ## Description 
 
 
-## Screenshot
+## Link to video demonstration
 ![]()
   
 ## Table of Contents
     
 - [anti-social-social-app](#anti-social-social-app)
   - [Description](#description)
-  - [Screenshot](#screenshot)
+  - [Link to video demonstration](#link-to-video-demonstration)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
