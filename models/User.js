@@ -1,12 +1,6 @@
 const { Schema, model } = require('mongoose');
 const userSchema = require('./User');
 
-// Aggregate function to get the number of students overall
-const headCount = async () =>
-  Student.aggregate()
-    .count('studentCount')
-    .then((numberOfStudents) => numberOfStudents);
-
 // Schema to create User model
 const userSchema = new Schema(
   {
@@ -20,7 +14,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
       unique: true,
-      match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]
+      match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Incorrect email format']
     },
     thoughts: [  {
       type: Schema.Types.ObjectId,
