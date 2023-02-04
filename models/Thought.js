@@ -1,4 +1,4 @@
-const { Schema, Types } = require('mongoose');
+const { Schema, Types, model } = require('mongoose');
 
 // reaction schema (called below)
 const reactionSchema = new Schema(
@@ -19,17 +19,15 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // Use a getter method to format the timestamp on query
+      get: (date) => {
+        return new Date (date).toLocaleDateString()
+      }
     },
   },
 );
 
 const thoughtSchema = new Schema(
   {
-    // thoughtId: {
-    //   type: Schema.Types.ObjectId,
-    //   default: () => new Types.ObjectId(),
-    // },
     thoughtText: {
       type: String,
       required: true,
@@ -40,7 +38,9 @@ const thoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // use a getter method to format the timestamp on query
+      get: (date) => {
+        return new Date (date).toLocaleDateString()
+      }
     },
     username: {
       type: String,
