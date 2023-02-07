@@ -1,10 +1,10 @@
 const { User, Thought } = require("../models");
 
-// Aggregate function to get the number of friends overall
-const friendCount = async () =>
-  User.aggregate()
-    .count("friendCount")
-    .then((numberOfFriends) => numberOfFriends);
+// Aggregate function to get the number of friends overall - unnecessary 
+// const friendCount = async () =>
+//   User.aggregate()
+//     .count("friendCount")
+//     .then((numberOfFriends) => numberOfFriends);
 
 module.exports = {
   // Get all users
@@ -39,7 +39,7 @@ module.exports = {
       .then((user) => res.json(user))
       .catch((err) => res.status(500).json(err));
   },
-
+// update user by id
   updateUser(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
