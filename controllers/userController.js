@@ -13,7 +13,7 @@ module.exports = {
       .then(async (users) => {
         const userObj = {
           users,
-          friendCount: await friendCount(),
+          // friendCount: await friendCount(),
         };
         return res.json(userObj);
       })
