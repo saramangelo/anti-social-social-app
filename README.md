@@ -2,10 +2,10 @@
 ![Github license](https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen)
 
 ## Description 
-
+This is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list, using Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
 ## Link to video demonstration
-![]()
+[DEMO](https://www.loom.com/share/0f66b4ab2a0241eb800edf54e300a3f7)
   
 ## Table of Contents
     
@@ -23,15 +23,15 @@
   - [Questions](#questions)
   
 ## Installation
-
+Clone [this](https://github.com/saramangelo/anti-social-social-app.git) repository from Github, type `npm run start` in the terminal, test routes in Insomnia, Postman, or other cross-platform desktop application for testing HTTP-based APIs.
   
   
 ## Usage
-
+Test API routes.
    
   
 ## Credits
-
+Express.js, Mongoose, MongoDB, Node.js
   
   
 ## License
@@ -60,16 +60,16 @@ SOFTWARE.
 
 
 ## Features
-
+N/A
 
 
 ## How to Contribute
-  
+N/A
 (https://www.contributor-covenant.org/)
   
 
 ## Tests
-
+N/A
 
 
 ## Questions
