@@ -1,30 +1,28 @@
-const { Schema, Types, model } = require('mongoose');
+const { Schema, Types, model } = require("mongoose");
 
 // reaction schema (called below)
-const reactionSchema = new Schema(
-  {
-    reactionId: {
-      type: Schema.Types.ObjectId,
-      default: () => new Types.ObjectId(),
-    },
-    reactionBody: {
-      type: String,
-      required: true,
-      maxlength: 280,
-    },
-    username:  {
-      type: String,
-      required: true,
-    },
-    createdAt: {
-      type: Date,
-      default: Date.now,
-      get: (date) => {
-        return new Date (date).toLocaleDateString()
-      }
+const reactionSchema = new Schema({
+  reactionId: {
+    type: Schema.Types.ObjectId,
+    default: () => new Types.ObjectId(),
+  },
+  reactionBody: {
+    type: String,
+    required: true,
+    maxlength: 280,
+  },
+  username: {
+    type: String,
+    required: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+    get: (date) => {
+      return new Date(date).toLocaleDateString();
     },
   },
-);
+});
 
 const thoughtSchema = new Schema(
   {
@@ -39,8 +37,8 @@ const thoughtSchema = new Schema(
       type: Date,
       default: Date.now,
       get: (date) => {
-        return new Date (date).toLocaleDateString()
-      }
+        return new Date(date).toLocaleDateString();
+      },
     },
     username: {
       type: String,
@@ -58,13 +56,13 @@ const thoughtSchema = new Schema(
 
 // Create a virtual property `reactionCount` that retrieves the length of the thought's reactions array field on query.
 thoughtSchema
-  .virtual('reactionCount')
+  .virtual("reactionCount")
   // Getter
   .get(function () {
     return this.reactions.length;
   });
 
-  // Initialize Thought model
-const Thought = model('thought', thoughtSchema);
+// Initialize Thought model
+const Thought = model("thought", thoughtSchema);
 
 module.exports = Thought;

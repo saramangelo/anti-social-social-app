@@ -1,6 +1,6 @@
 const { User, Thought } = require("../models");
 
-// Aggregate function to get the number of friends overall - unnecessary 
+// Aggregate function to get the number of friends overall - unnecessary
 // const friendCount = async () =>
 //   User.aggregate()
 //     .count("friendCount")
@@ -39,7 +39,7 @@ module.exports = {
       .then((user) => res.json(user))
       .catch((err) => res.status(500).json(err));
   },
-// update user by id
+  // update user by id
   updateUser(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
